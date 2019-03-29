@@ -1,2 +1,5 @@
 node_modules
 coverage
+dist/bundle.js
+dist/*hot-update.json
+dist/*hot-update.js

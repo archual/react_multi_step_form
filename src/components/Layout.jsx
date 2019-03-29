@@ -88,7 +88,7 @@ export class App extends React.Component {
             <Switch>
               <Route
                 exact
-                path="/submityouradventure"
+                path="/dist/submityouradventure"
                 render={props => (
                   <GMap
                     map={map}

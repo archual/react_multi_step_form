@@ -1,5 +1,7 @@
 // Webpack v4
 const path = require("path");
+const webpack = require("webpack");
+
 module.exports = {
   entry: { main: "./src/index.js" },
   module: {
@@ -26,7 +28,9 @@ module.exports = {
     path: path.resolve(__dirname, "dist"),
     filename: "bundle.js"
   },
+  plugins: [new webpack.HotModuleReplacementPlugin()],
   devServer: {
-    contentBase: "./dist"
+    contentBase: "./dist",
+    hot: true
   }
 };

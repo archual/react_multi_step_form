@@ -8,3 +8,5 @@ import jQuery from "jquery";
 jQuery(document).ready(function() {
   ReactDOM.render(<App />, document.getElementById("root"));
 });
+
+module.hot.accept();
